@@ -23,27 +23,27 @@ export default function Contact() {
     return (
         <div >
             <Layout>
-                <div class="flex items-center justify-center p-10">
+                <div className="flex items-center justify-center p-10">
                 </div>
-                <div class="flex items-center justify-center">
-                    <ul class="table bg-gray-600 rounded-md">
-                        <li class="table-row font-bold">
-                            <span class="table-cell p-3">  Contact: {first},&nbsp;{last}</span>
+                <div className="flex items-center justify-center">
+                    <ul className="table bg-gray-600 rounded-md">
+                        <li className="table-row font-bold">
+                            <span className="table-cell p-3">  Contact: {first},&nbsp;{last}</span>
                         </li>
-                        <li class="table-row font-bold">
-                            <span class="table-cell p-3"> Country: {country.toUpperCase()}</span>
+                        <li className="table-row font-bold">
+                            <span className="table-cell p-3"> Country: {country.toUpperCase()}</span>
                         </li>
-                        <li class="table-row font-bold">
-                            <span class="table-cell p-3"> Phone Number: {phoneNumber}</span>
+                        <li className="table-row font-bold">
+                            <span className="table-cell p-3"> Phone Number: {phoneNumber}</span>
                         </li>
-                        <li class="table-row font-bold">
-                            <span class="table-cell p-3"> Birthday: {formattedBirthday}</span>
+                        <li className="table-row font-bold">
+                            <span className="table-cell p-3"> Birthday: {formattedBirthday}</span>
                         </li>
                     </ul>
 
                 </div>
             </Layout>
-            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center w-40 m-10">
+            <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center w-40 m-10">
                 <a href="#" onClick={() => router.back()}>Go Back</a>
             </div>
         </div >
