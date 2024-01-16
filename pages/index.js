@@ -6,9 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
+    <div>
       <Layout>
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <Link
@@ -16,7 +14,7 @@ export default function Home() {
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-            Dynamic Routes<br />Project{' '}&nbsp;
+              Dynamic Routes<br />Project{' '}&nbsp;
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
@@ -40,7 +38,7 @@ export default function Home() {
               A file-based system with zero config
             </p>
           </Link>
----------------------------------
+          ---------------------------------
           <Link
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -67,6 +65,6 @@ export default function Home() {
           </code>
         </p>
       </Layout>
-    </main>
+    </div>
   );
 }
