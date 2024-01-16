@@ -28,7 +28,7 @@ export default function Contact() {
                 <div class="flex items-center justify-center">
                     <ul class="table bg-gray-600 rounded-md">
                         <li class="table-row font-bold">
-                            <span class="table-cell p-3">  Contact: {last},{first} </span>
+                            <span class="table-cell p-3">  Contact: {first},&nbsp;{last}</span>
                         </li>
                         <li class="table-row font-bold">
                             <span class="table-cell p-3"> Country: {country.toUpperCase()}</span>
