@@ -10,7 +10,7 @@ export default function Home() {
             <Layout>
                 <h2 className="  place-items-center  before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]"
                 >Experimenting with NextJs Dynamic Routing</h2>
-                <p>About this project:
+                <div>About this project:
                     <ul>
                         <li>
                             In this project pages below are dynamically generated and routed when users clicks on them. Data comes from a dummy JavaScript file under the api folder.
@@ -23,8 +23,7 @@ export default function Home() {
                             I used Tailwind to style this page.
                         </li>
                     </ul>
-                    <hr />
-                </p>
+                </div>
 
                 <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
                     <Link
