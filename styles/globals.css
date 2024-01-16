@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Import the base styles for Tailwind */
+@import 'tailwindcss/base';
+
+/* Customize and extend Tailwind's default styles */
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
   --foreground-rgb: 0, 0, 0;

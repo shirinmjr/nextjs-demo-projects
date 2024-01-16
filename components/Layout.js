@@ -7,7 +7,7 @@ function Menu() {
             <ul className="flex items-center">
                 <Link className="text-white text-lg font-bold mr-4 ml-4" href="/">Home</Link> &nbsp;|&nbsp;
                 <Link className="text-white text-lg font-bold mr-4 ml-4" href="/contacts">Contacts</Link> &nbsp;|&nbsp;
-                <Link className="text-white text-lg font-bold mr-4  ml-4" href="/autoroute">Autoroute</Link>
+                <Link className="text-white text-lg font-bold mr-4  ml-4" href="/dynamicroutes">Dynamic Routes</Link>
             </ul>
         </nav>
     );
