@@ -32,7 +32,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 * News -> Using open NY Times Open api and rendering with `getStaticProps()`
 
 
-
+## Axios Call in NextJs Project
+to install Axios
+```bash
+npm install axios
+```
+```JS
+// Import Axios
+import axios from 'axios';
+// Your Next.js component or page
+const API_KEY = "";
+export async function getStaticProps() {
+    const URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`;
+    const response = await axios.get(URL)
+        .then(function (response) {
+            // Handle success
+            console.log('Response:', response.data);
+        })
+        .catch(function (error) {
+            // Handle error
+            console.error('Error:', error);
+        });
+```
 
 Notes:
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
