@@ -6,7 +6,7 @@ export default function Contact() {
     const router = useRouter();
     const { contactId } = router.query;
     const contact = contacts.find(contact => contact.id = contactId);
-    const [first, last] = contact?.name.split(" ");
+    const [first, last] = contact.name.split(" ");
     const country = contact.country;
     const phoneNumber = contact.phoneNumber;
 
