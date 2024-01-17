@@ -44,15 +44,25 @@ import axios from 'axios';
 const API_KEY = "";
 export async function getStaticProps() {
     const URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`;
-    const response = await axios.get(URL)
-        .then(function (response) {
-            // Handle success
-            console.log('Response:', response.data);
-        })
-        .catch(function (error) {
-            // Handle error
-            console.error('Error:', error);
-        });
+    try {
+        const response = await axios.get(URL);
+        return {
+            props: {
+                data: response.data.results,
+            },
+        };
+    } catch (error) {
+        console.error('Error:', error);
+
+        // If there's an error, you can handle it and return appropriate props
+        return {
+            props: {
+                data: null, // or any default value
+                error: 'Failed to fetch data',
+            },
+        };
+    }
+}
 ```
 
 Notes:
