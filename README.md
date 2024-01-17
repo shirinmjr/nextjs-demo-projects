@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+Showcase: A collection of small projects developed using Next.js. Leveraging the power of Next.js, each project demonstrates my proficiency in building efficient and dynamic web applications. From interactive and responsive interfaces to seamless server-side rendering, these projects highlight my skills in utilizing the features provided by Next.js to create engaging and user-friendly web experiences. Explore the versatility and functionality embedded in these Next.js projects, reflecting my commitment to delivering high-quality and innovative solutions in web development. 
+
+
+
 ## Getting Started
 
 First, run the development server:

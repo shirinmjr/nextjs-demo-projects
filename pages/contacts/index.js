@@ -13,7 +13,8 @@ export default function Contacts() {
                             <li className="table-row font-bold" key={index}>
                                 <Link className="table-cell p-3" href={`contacts/${contact.id}`}>
                                     {contact.name}
-                                </Link></li>
+                                </Link>
+                            </li>
                         );
                     })}
                 </ul>
