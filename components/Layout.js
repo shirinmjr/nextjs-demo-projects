@@ -8,7 +8,7 @@ function Menu() {
                 <Link className="text-white text-lg font-bold mr-4 ml-4" href="/">Home</Link> &nbsp;|&nbsp;
                 <Link className="text-white text-lg font-bold mr-4  ml-4" href="/dynamicroutes">Dynamic Routes</Link>&nbsp;|&nbsp;
                 <Link className="text-white text-lg font-bold mr-4 ml-4" href="/contacts">Contacts</Link> &nbsp;|&nbsp;
-                <Link className="text-white text-lg font-bold mr-4  ml-4" href="/news">News</Link>
+                <Link className="text-white text-lg font-bold mr-4  ml-4" href="/news_static_props">News Static Props</Link>
             </ul>
         </nav>
     );
