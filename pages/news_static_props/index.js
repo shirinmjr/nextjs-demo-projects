@@ -52,14 +52,3 @@ export async function getStaticProps() {
         };
     }
 }
-
-
-
-
-
-
-// const getNews = async () => {
-//     const response = await axios.get(`https://swapi.dev/api/people`);
-//     console.log(response.data);
-//     setPeople(response.data);
-// };
