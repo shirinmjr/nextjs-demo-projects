@@ -1,9 +1,9 @@
-import axios from 'axios';// Import Axios
 import Layout from "@/components/Layout";
 import Link from 'next/link';
+import { handler } from '../api';
 
-export default function News({ data }) {
-    const stories = data.results;
+//stories should match the props coming to this
+export default function News({ stories }) {
     console.log("Top Stories", stories);
     return (
         <div>
@@ -33,17 +33,18 @@ export default function News({ data }) {
 
 const API_KEY = "";
 export async function getStaticProps() {
+    console.log("connecting");
     const URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`;
     try {
-        const response = await axios.get(URL);
+        const response = await handler(URL);
         return {
             props: {
-                data: response.data,
+                stories: response,
             },
         };
     } catch (error) {
         console.error('Error:', error);
-        // If there's an error, handle it and return appropriate props
+        // handle error, return appropriate props
         return {
             props: {
                 data: null, // or any default value
