@@ -89,3 +89,6 @@ git remote add origin git@github.com:shirinmjr/nextjs-sandbox.git
 git branch -M main
 git push -u origin main
 ```
+```bash
+npm install @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+```
