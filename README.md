@@ -13,6 +13,15 @@ To create a NextJs Project:
 ```bash
 npm crate next-app `app-name`
 ```
+Use npx to create nextJS project
+```bash
+npx create-next-app@latest
+```
+
+[ Need to install the following packages:
+  create-next-app@14.1.0
+Ok to proceed? (y) y]
+
 To run the development server:
 ```bash
 npm run dev
