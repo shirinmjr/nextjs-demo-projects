@@ -85,7 +85,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -----------
 Add To remote repo
 ```bash
-git remote add origin git@github.com:shirinmjr/nextjs-sandbox.git
+git remote add origin <<<SSH for Remote Repo>>>
 git branch -M main
 git push -u origin main
 ```
